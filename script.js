@@ -4,7 +4,7 @@ function rendimento() {
     let valor = parseFloat(prompt("Digite o valor que irá aplicar: "));
     let meses = parseInt(prompt("Digite a quantidade de meses a aplicar: "));
 
-    let rend = (valor * juro) * meses;
+    let rend = ((valor * juro)/100) * meses;
 
-    alert("Seus R$",valor," ao longo de ",meses,"meses renderam R$",rend);
+    alert(rend);
 }
